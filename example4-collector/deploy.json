@@ -7,7 +7,7 @@
         }
     },
     "variables": {
-        "collectorTemplateUri": "[uri(deployment().properties.templateLink.uri, 'collector.template.json')]"
+        "collectorTemplateUri": "[uri('https://github.com/gbmarimuthu/ARMPlayground/raw/master/example4-collector/', 'collector.template.json')]"
     },
     "resources": [
         {
@@ -25,7 +25,7 @@
                         "value": "[parameters('networkSecurityGroupsSettings').securityRules]"
                     },
                     "transformTemplateUri": {
-                        "value": "[uri(deployment().properties.templateLink.uri, 'transform.json')]"
+                        "value": "[uri('https://github.com/gbmarimuthu/ARMPlayground/raw/master/example4-collector/', 'transform.json')]"
                     }
                 }
             }
