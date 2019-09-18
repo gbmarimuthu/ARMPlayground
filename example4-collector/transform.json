@@ -8,6 +8,18 @@
         "state": {
             "type": "array",
             "defaultValue": []
+        },
+        "common1":{
+            "value":"common test1"
+        },
+        "common2":{
+            "value":"common test2"
+        },
+        "common3":{
+            "value":"common test3"
+        },
+        "common4":{
+            "value":"common test4"
         }
     },
     "variables": {
