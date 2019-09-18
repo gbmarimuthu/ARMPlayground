@@ -23,6 +23,39 @@
                 ]
             }
         },
+        "tags":{
+            "value":
+            [
+                {
+                    "tagName":"tag1",
+                    "tagValue":"value1"
+                },
+                {
+                    "tagName":"tag2",
+                    "tagValue":"value2"
+                },
+                {
+                    "tagName":"tag3",
+                    "tagValue":"sb"
+                },
+                {
+                    "tagName":"tag4",
+                    "tagValue":"value4"
+                },
+                {
+                    "tagName":"tag5",
+                    "tagValue":"value5"
+                },
+                {
+                    "tagName":"tag6",
+                    "tagValue":"value6"
+                },
+                {
+                    "tagName":"tag7",
+                    "tagValue":"value7"
+                }
+            ]
+        },
         "networkSecurityGroupsSettings": {
             "value": {
                 "securityRules": [
