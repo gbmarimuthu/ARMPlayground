@@ -5,6 +5,9 @@
         "source": {
             "type": "array"
         },
+        "parametersTemplateUri": {
+            "type": "string"
+        },
         "transformTemplateUri": {
             "type": "string"
         },
@@ -23,20 +26,9 @@
             "name": "loop-0",
             "properties": {
                 "mode": "Incremental",
-                "parameters": {},
-                "template": {
-                    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
-                    "contentVersion": "1.0.0.0",
-                    "parameters": {},
-                    "variables": {},
-                    "resources": [],
-                    "outputs": {
-                        "collection": {
-                            "type": "array",
-                            "value": "[parameters('state')]"
-                        }
-                    }
-                }
+                 "templateLink": {
+                    "uri": "[parameters('parametersTemplateUri')]"
+                },
             }
         },
         {
@@ -62,6 +54,9 @@
                     },
                     "state": {
                         "value": "[reference(concat('loop-', copyindex())).outputs.collection.value]"
+                    },
+                    "mergedParameters": {
+                           
                     }
                 }
             }
